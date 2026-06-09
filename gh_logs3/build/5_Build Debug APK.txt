@@ -1,0 +1,83 @@
+﻿2026-06-09T09:00:13.9930957Z ##[group]Run ./gradlew assembleDebug
+2026-06-09T09:00:13.9931303Z [36;1m./gradlew assembleDebug[0m
+2026-06-09T09:00:13.9947121Z shell: /usr/bin/bash -e {0}
+2026-06-09T09:00:13.9947415Z env:
+2026-06-09T09:00:13.9947737Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-09T09:00:13.9948224Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-09T09:00:13.9948594Z ##[endgroup]
+2026-06-09T09:00:15.2355812Z Downloading https://services.gradle.org/distributions/gradle-8.6-bin.zip
+2026-06-09T09:00:17.6630084Z ............10%.............20%............30%.............40%.............50%............60%.............70%.............80%............90%.............100%
+2026-06-09T09:00:18.7888634Z 
+2026-06-09T09:00:18.7889529Z Welcome to Gradle 8.6!
+2026-06-09T09:00:18.7890084Z 
+2026-06-09T09:00:18.7897598Z Here are the highlights of this release:
+2026-06-09T09:00:18.7899030Z  - Configurable encryption key for configuration cache
+2026-06-09T09:00:18.7899928Z  - Build init improvements
+2026-06-09T09:00:18.7900413Z  - Build authoring improvements
+2026-06-09T09:00:18.7900762Z 
+2026-06-09T09:00:18.7901147Z For more details see https://docs.gradle.org/8.6/release-notes.html
+2026-06-09T09:00:18.7901733Z 
+2026-06-09T09:00:18.9892736Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-06-09T09:01:16.1903762Z > Task :app:preBuild UP-TO-DATE
+2026-06-09T09:01:16.1908014Z > Task :app:preDebugBuild UP-TO-DATE
+2026-06-09T09:01:16.1908672Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-06-09T09:01:16.1909242Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-06-09T09:01:16.2878978Z > Task :app:generateDebugBuildConfig
+2026-06-09T09:01:34.1881364Z > Task :app:generateDebugResValues
+2026-06-09T09:01:34.2888604Z > Task :app:checkDebugAarMetadata
+2026-06-09T09:01:34.2924518Z > Task :app:mapDebugSourceSetPaths
+2026-06-09T09:01:34.2925034Z > Task :app:generateDebugResources
+2026-06-09T09:01:35.1884891Z > Task :app:packageDebugResources
+2026-06-09T09:01:35.7877297Z > Task :app:mergeDebugResources
+2026-06-09T09:01:35.9890874Z > Task :app:createDebugCompatibleScreenManifests
+2026-06-09T09:01:35.9943519Z > Task :app:extractDeepLinksDebug
+2026-06-09T09:01:36.1877213Z > Task :app:parseDebugLocalResources
+2026-06-09T09:01:36.3877273Z > Task :app:processDebugMainManifest
+2026-06-09T09:01:36.4877612Z > Task :app:processDebugManifest
+2026-06-09T09:01:38.9905186Z > Task :app:javaPreCompileDebug
+2026-06-09T09:01:38.9906390Z > Task :app:mergeDebugShaders
+2026-06-09T09:01:38.9934886Z > Task :app:compileDebugShaders NO-SOURCE
+2026-06-09T09:01:38.9945745Z > Task :app:generateDebugAssets UP-TO-DATE
+2026-06-09T09:01:39.0876679Z > Task :app:mergeDebugAssets
+2026-06-09T09:01:39.0877422Z > Task :app:compressDebugAssets
+2026-06-09T09:01:39.0877900Z > Task :app:desugarDebugFileDependencies
+2026-06-09T09:01:40.3889502Z > Task :app:mergeDebugJniLibFolders
+2026-06-09T09:01:40.4877753Z > Task :app:checkDebugDuplicateClasses
+2026-06-09T09:01:40.5876982Z > Task :app:mergeDebugNativeLibs NO-SOURCE
+2026-06-09T09:02:06.4877588Z > Task :app:processDebugManifestForPackage
+2026-06-09T09:02:10.5904598Z > Task :app:mergeExtDexDebug
+2026-06-09T09:02:33.9905589Z > Task :app:mergeLibDexDebug
+2026-06-09T09:02:35.4877069Z > Task :app:stripDebugDebugSymbols NO-SOURCE
+2026-06-09T09:02:35.8877173Z > Task :app:processDebugResources FAILED
+2026-06-09T09:02:36.9884507Z > Task :app:validateSigningDebug
+2026-06-09T09:02:40.1894328Z 
+2026-06-09T09:02:40.1909792Z FAILURE: Build failed with an exception.
+2026-06-09T09:02:40.1934085Z 
+2026-06-09T09:02:40.1934560Z 24 actionable tasks: 24 executed
+2026-06-09T09:02:40.1964564Z * What went wrong:
+2026-06-09T09:02:40.2024764Z Execution failed for task ':app:processDebugResources'.
+2026-06-09T09:02:40.2026104Z > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+2026-06-09T09:02:40.2027176Z    > Android resource linking failed
+2026-06-09T09:02:40.2028773Z      ERROR: /home/runner/work/pdfforge-android/pdfforge-android/AndroidApp/app/src/main/AndroidManifest.xml:11:5-51:19: AAPT: error: resource xml/data_extraction_rules (aka com.pdfforge.app:xml/data_extraction_rules) not found.
+2026-06-09T09:02:40.2030998Z          
+2026-06-09T09:02:40.2032338Z      ERROR: /home/runner/work/pdfforge-android/pdfforge-android/AndroidApp/app/src/main/AndroidManifest.xml:11:5-51:19: AAPT: error: resource xml/backup_rules (aka com.pdfforge.app:xml/backup_rules) not found.
+2026-06-09T09:02:40.2034144Z          
+2026-06-09T09:02:40.2035497Z      ERROR: /home/runner/work/pdfforge-android/pdfforge-android/AndroidApp/app/src/main/AndroidManifest.xml:11:5-51:19: AAPT: error: resource mipmap/ic_launcher (aka com.pdfforge.app:mipmap/ic_launcher) not found.
+2026-06-09T09:02:40.2036946Z          
+2026-06-09T09:02:40.2038254Z      ERROR: /home/runner/work/pdfforge-android/pdfforge-android/AndroidApp/app/src/main/AndroidManifest.xml:11:5-51:19: AAPT: error: resource string/app_name (aka com.pdfforge.app:string/app_name) not found.
+2026-06-09T09:02:40.2039709Z          
+2026-06-09T09:02:40.2041121Z      ERROR: /home/runner/work/pdfforge-android/pdfforge-android/AndroidApp/app/src/main/AndroidManifest.xml:11:5-51:19: AAPT: error: resource mipmap/ic_launcher_round (aka com.pdfforge.app:mipmap/ic_launcher_round) not found.
+2026-06-09T09:02:40.2042653Z          
+2026-06-09T09:02:40.2044197Z      ERROR: /home/runner/work/pdfforge-android/pdfforge-android/AndroidApp/app/src/main/AndroidManifest.xml:11:5-51:19: AAPT: error: resource style/Theme.PDFforge (aka com.pdfforge.app:style/Theme.PDFforge) not found.
+2026-06-09T09:02:40.2045772Z          
+2026-06-09T09:02:40.2054346Z      ERROR: /home/runner/work/pdfforge-android/pdfforge-android/AndroidApp/app/src/main/AndroidManifest.xml:24:9-32:20: AAPT: error: resource style/Theme.PDFforge (aka com.pdfforge.app:style/Theme.PDFforge) not found.
+2026-06-09T09:02:40.2055362Z          
+2026-06-09T09:02:40.2055476Z 
+2026-06-09T09:02:40.2055561Z * Try:
+2026-06-09T09:02:40.2055810Z > Run with --stacktrace option to get the stack trace.
+2026-06-09T09:02:40.2056201Z > Run with --info or --debug option to get more log output.
+2026-06-09T09:02:40.2056794Z > Run with --scan to get full insights.
+2026-06-09T09:02:40.2057099Z > Get more help at https://help.gradle.org.
+2026-06-09T09:02:40.2057300Z 
+2026-06-09T09:02:40.2057388Z BUILD FAILED in 2m 25s
+2026-06-09T09:02:40.6328610Z ##[error]Process completed with exit code 1.

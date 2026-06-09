@@ -1,0 +1,72 @@
+﻿2026-06-09T09:00:12.1248536Z ##[group]Run actions/checkout@v4
+2026-06-09T09:00:12.1249394Z with:
+2026-06-09T09:00:12.1249827Z   repository: dharani2006lakshmi-sys/pdfforge-android
+2026-06-09T09:00:12.1253225Z   token: ***
+2026-06-09T09:00:12.1253570Z   ssh-strict: true
+2026-06-09T09:00:12.1254069Z   ssh-user: git
+2026-06-09T09:00:12.1254430Z   persist-credentials: true
+2026-06-09T09:00:12.1254800Z   clean: true
+2026-06-09T09:00:12.1255161Z   sparse-checkout-cone-mode: true
+2026-06-09T09:00:12.1255555Z   fetch-depth: 1
+2026-06-09T09:00:12.1255894Z   fetch-tags: false
+2026-06-09T09:00:12.1256257Z   show-progress: true
+2026-06-09T09:00:12.1256625Z   lfs: false
+2026-06-09T09:00:12.1256956Z   submodules: false
+2026-06-09T09:00:12.1257309Z   set-safe-directory: true
+2026-06-09T09:00:12.1257944Z ##[endgroup]
+2026-06-09T09:00:12.2321236Z Syncing repository: dharani2006lakshmi-sys/pdfforge-android
+2026-06-09T09:00:12.2323261Z ##[group]Getting Git version info
+2026-06-09T09:00:12.2324008Z Working directory is '/home/runner/work/pdfforge-android/pdfforge-android'
+2026-06-09T09:00:12.2324945Z [command]/usr/bin/git version
+2026-06-09T09:00:12.2387311Z git version 2.54.0
+2026-06-09T09:00:12.2410336Z ##[endgroup]
+2026-06-09T09:00:12.2432443Z Temporarily overriding HOME='/home/runner/work/_temp/f6f9a6f3-f971-4d76-9d17-a6b502bb3aee' before making global git config changes
+2026-06-09T09:00:12.2434120Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-09T09:00:12.2437718Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pdfforge-android/pdfforge-android
+2026-06-09T09:00:12.2480986Z Deleting the contents of '/home/runner/work/pdfforge-android/pdfforge-android'
+2026-06-09T09:00:12.2484195Z ##[group]Initializing the repository
+2026-06-09T09:00:12.2488307Z [command]/usr/bin/git init /home/runner/work/pdfforge-android/pdfforge-android
+2026-06-09T09:00:12.2590388Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-09T09:00:12.2595275Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-09T09:00:12.2596208Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-09T09:00:12.2596741Z hint: call:
+2026-06-09T09:00:12.2597119Z hint:
+2026-06-09T09:00:12.2597842Z hint: 	git config --global init.defaultBranch <name>
+2026-06-09T09:00:12.2598279Z hint:
+2026-06-09T09:00:12.2598868Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-09T09:00:12.2599893Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-09T09:00:12.2600407Z hint:
+2026-06-09T09:00:12.2600743Z hint: 	git branch -m <name>
+2026-06-09T09:00:12.2601103Z hint:
+2026-06-09T09:00:12.2601559Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-06-09T09:00:12.2602281Z Initialized empty Git repository in /home/runner/work/pdfforge-android/pdfforge-android/.git/
+2026-06-09T09:00:12.2606168Z [command]/usr/bin/git remote add origin https://github.com/dharani2006lakshmi-sys/pdfforge-android
+2026-06-09T09:00:12.2643775Z ##[endgroup]
+2026-06-09T09:00:12.2644505Z ##[group]Disabling automatic garbage collection
+2026-06-09T09:00:12.2649631Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-09T09:00:12.2673314Z ##[endgroup]
+2026-06-09T09:00:12.2674153Z ##[group]Setting up auth
+2026-06-09T09:00:12.2680187Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-09T09:00:12.2709341Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-09T09:00:12.3011113Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-09T09:00:12.3036910Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-09T09:00:12.3209553Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-09T09:00:12.3240709Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-09T09:00:12.3420804Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-09T09:00:12.3452750Z ##[endgroup]
+2026-06-09T09:00:12.3454026Z ##[group]Fetching the repository
+2026-06-09T09:00:12.3462219Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +18586b438a8303ce880b98c724dc4eb799e08d1f:refs/remotes/origin/main
+2026-06-09T09:00:13.3683062Z From https://github.com/dharani2006lakshmi-sys/pdfforge-android
+2026-06-09T09:00:13.3683926Z  * [new ref]         18586b438a8303ce880b98c724dc4eb799e08d1f -> origin/main
+2026-06-09T09:00:13.3726544Z ##[endgroup]
+2026-06-09T09:00:13.3727078Z ##[group]Determining the checkout info
+2026-06-09T09:00:13.3728689Z ##[endgroup]
+2026-06-09T09:00:13.3735977Z [command]/usr/bin/git sparse-checkout disable
+2026-06-09T09:00:13.3782493Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-09T09:00:13.3809780Z ##[group]Checking out the ref
+2026-06-09T09:00:13.3816372Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-06-09T09:00:13.3939135Z Switched to a new branch 'main'
+2026-06-09T09:00:13.3940208Z branch 'main' set up to track 'origin/main'.
+2026-06-09T09:00:13.3949456Z ##[endgroup]
+2026-06-09T09:00:13.3994099Z [command]/usr/bin/git log -1 --format=%H
+2026-06-09T09:00:13.4009396Z 18586b438a8303ce880b98c724dc4eb799e08d1f
