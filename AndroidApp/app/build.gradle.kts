@@ -84,9 +84,8 @@ dependencies {
     // WorkManager
     implementation(libs.workmanager)
 
-    // Coil & Splash
+    // Coil Image Loading
     implementation(libs.coil)
-    implementation(libs.coil.network)
     implementation(libs.splashscreen)
 
     testImplementation(libs.junit)

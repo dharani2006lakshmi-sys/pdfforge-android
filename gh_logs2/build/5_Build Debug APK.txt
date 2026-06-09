@@ -1,0 +1,48 @@
+﻿2026-06-09T08:56:27.3759223Z ##[group]Run ./gradlew assembleDebug
+2026-06-09T08:56:27.3760457Z [36;1m./gradlew assembleDebug[0m
+2026-06-09T08:56:27.3790089Z shell: /usr/bin/bash -e {0}
+2026-06-09T08:56:27.3791067Z env:
+2026-06-09T08:56:27.3792404Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-09T08:56:27.3794256Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-09T08:56:27.3795723Z ##[endgroup]
+2026-06-09T08:56:29.0700707Z Downloading https://services.gradle.org/distributions/gradle-8.6-bin.zip
+2026-06-09T08:56:31.6138268Z ............10%.............20%............30%.............40%.............50%............60%.............70%.............80%............90%.............100%
+2026-06-09T08:56:32.8869536Z 
+2026-06-09T08:56:32.8870471Z Welcome to Gradle 8.6!
+2026-06-09T08:56:32.8870884Z 
+2026-06-09T08:56:32.8882603Z Here are the highlights of this release:
+2026-06-09T08:56:32.8883455Z  - Configurable encryption key for configuration cache
+2026-06-09T08:56:32.8900397Z  - Build init improvements
+2026-06-09T08:56:32.8901357Z  - Build authoring improvements
+2026-06-09T08:56:32.8902070Z 
+2026-06-09T08:56:32.8902478Z For more details see https://docs.gradle.org/8.6/release-notes.html
+2026-06-09T08:56:32.8902981Z 
+2026-06-09T08:56:33.0864636Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-06-09T08:57:30.2924544Z > Task :app:preBuild UP-TO-DATE
+2026-06-09T08:57:30.2964030Z > Task :app:preDebugBuild UP-TO-DATE
+2026-06-09T08:57:30.3864162Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-06-09T08:57:30.3874892Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-06-09T08:57:30.4864079Z > Task :app:generateDebugBuildConfig
+2026-06-09T08:57:42.4861882Z > Task :app:checkDebugAarMetadata FAILED
+2026-06-09T08:57:42.5875102Z 
+2026-06-09T08:57:42.5876384Z FAILURE: Build failed with an exception.
+2026-06-09T08:57:42.5877097Z 
+2026-06-09T08:57:42.5877597Z * What went wrong:
+2026-06-09T08:57:42.5878333Z Execution failed for task ':app:checkDebugAarMetadata'.
+2026-06-09T08:57:42.5897173Z 2 actionable tasks: 2 executed
+2026-06-09T08:57:42.5898861Z > Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
+2026-06-09T08:57:42.5902122Z    > Could not find io.coil-kt:coil-network-okhttp:2.6.0.
+2026-06-09T08:57:42.5903005Z      Searched in the following locations:
+2026-06-09T08:57:42.5904247Z        - https://dl.google.com/dl/android/maven2/io/coil-kt/coil-network-okhttp/2.6.0/coil-network-okhttp-2.6.0.pom
+2026-06-09T08:57:42.5906006Z        - https://repo.maven.apache.org/maven2/io/coil-kt/coil-network-okhttp/2.6.0/coil-network-okhttp-2.6.0.pom
+2026-06-09T08:57:42.5907161Z      Required by:
+2026-06-09T08:57:42.5907850Z          project :app
+2026-06-09T08:57:42.5908417Z 
+2026-06-09T08:57:42.5908896Z * Try:
+2026-06-09T08:57:42.5909499Z > Run with --stacktrace option to get the stack trace.
+2026-06-09T08:57:42.5910298Z > Run with --info or --debug option to get more log output.
+2026-06-09T08:57:42.5911054Z > Run with --scan to get full insights.
+2026-06-09T08:57:42.5911984Z > Get more help at https://help.gradle.org.
+2026-06-09T08:57:42.5912532Z 
+2026-06-09T08:57:42.5912876Z BUILD FAILED in 1m 13s
+2026-06-09T08:57:42.9812655Z ##[error]Process completed with exit code 1.
