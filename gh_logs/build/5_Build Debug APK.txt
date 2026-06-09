@@ -1,0 +1,149 @@
+﻿2026-06-09T08:11:07.0391813Z ##[group]Run ./gradlew assembleDebug
+2026-06-09T08:11:07.0392098Z [36;1m./gradlew assembleDebug[0m
+2026-06-09T08:11:07.0414056Z shell: /usr/bin/bash -e {0}
+2026-06-09T08:11:07.0414265Z env:
+2026-06-09T08:11:07.0414521Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-09T08:11:07.0414910Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-09T08:11:07.0415207Z ##[endgroup]
+2026-06-09T08:11:07.7901980Z Downloading https://services.gradle.org/distributions/gradle-8.6-bin.zip
+2026-06-09T08:11:08.8316004Z ............10%.............20%............30%.............40%.............50%............60%.............70%.............80%............90%.............100%
+2026-06-09T08:11:09.7269519Z 
+2026-06-09T08:11:09.7270823Z Welcome to Gradle 8.6!
+2026-06-09T08:11:09.7271087Z 
+2026-06-09T08:11:09.7272320Z Here are the highlights of this release:
+2026-06-09T08:11:09.7285654Z  - Configurable encryption key for configuration cache
+2026-06-09T08:11:09.7286497Z  - Build init improvements
+2026-06-09T08:11:09.7286990Z  - Build authoring improvements
+2026-06-09T08:11:09.7287418Z 
+2026-06-09T08:11:09.7287845Z For more details see https://docs.gradle.org/8.6/release-notes.html
+2026-06-09T08:11:09.7288389Z 
+2026-06-09T08:11:09.8274871Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-06-09T08:11:53.9426357Z > Task :app:preBuild UP-TO-DATE
+2026-06-09T08:11:53.9450764Z > Task :app:preDebugBuild UP-TO-DATE
+2026-06-09T08:11:54.0292106Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-06-09T08:11:54.0293157Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-06-09T08:11:54.1264475Z > Task :app:generateDebugBuildConfig
+2026-06-09T08:12:06.1290945Z 
+2026-06-09T08:12:06.1291589Z > Task :app:checkDebugAarMetadata FAILED
+2026-06-09T08:12:06.1342308Z FAILURE: Build failed with an exception.
+2026-06-09T08:12:06.1381134Z 
+2026-06-09T08:12:06.1381734Z * What went wrong:
+2026-06-09T08:12:06.1382344Z Execution failed for task ':app:checkDebugAarMetadata'.
+2026-06-09T08:12:06.1383844Z 2 actionable tasks: 2 executed
+2026-06-09T08:12:06.1415073Z > Configuration `:app:debugRuntimeClasspath` contains AndroidX dependencies, but the `android.useAndroidX` property is not enabled, which may cause runtime issues.
+2026-06-09T08:12:06.1416286Z   Set `android.useAndroidX=true` in the `gradle.properties` file and retry.
+2026-06-09T08:12:06.1434805Z   The following AndroidX dependencies are detected:
+2026-06-09T08:12:06.1491726Z   :app:debugRuntimeClasspath -> androidx.compose.ui:ui-tooling:1.6.7
+2026-06-09T08:12:06.1581204Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-tooling-android:1.6.7
+2026-06-09T08:12:06.1591073Z   :app:debugRuntimeClasspath -> androidx.activity:activity-compose:1.9.0
+2026-06-09T08:12:06.1603550Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.hilt:hilt-navigation:1.2.0 -> androidx.navigation:navigation-runtime:2.5.1 -> androidx.activity:activity-ktx:1.9.0
+2026-06-09T08:12:06.1605154Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.activity:activity:1.9.0
+2026-06-09T08:12:06.1606500Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.hilt:hilt-navigation:1.2.0 -> androidx.annotation:annotation:1.8.0
+2026-06-09T08:12:06.1608148Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.hilt:hilt-navigation:1.2.0 -> androidx.annotation:annotation:1.8.0 -> androidx.annotation:annotation-jvm:1.8.0
+2026-06-09T08:12:06.1609635Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.fragment:fragment:1.5.1 -> androidx.collection:collection:1.4.0
+2026-06-09T08:12:06.1611053Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.fragment:fragment:1.5.1 -> androidx.collection:collection:1.4.0 -> androidx.collection:collection-jvm:1.4.0
+2026-06-09T08:12:06.1612472Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-unit-android:1.6.7 -> androidx.collection:collection-ktx:1.4.0
+2026-06-09T08:12:06.1614199Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0 -> androidx.work:work-runtime:2.9.0 -> androidx.core:core:1.13.1
+2026-06-09T08:12:06.1615281Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.annotation:annotation-experimental:1.4.0
+2026-06-09T08:12:06.1616441Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0 -> androidx.work:work-runtime:2.9.0 -> androidx.core:core:1.13.1 -> androidx.concurrent:concurrent-futures:1.1.0
+2026-06-09T08:12:06.1618561Z   :app:debugRuntimeClasspath -> io.coil-kt:coil-compose:2.6.0 -> io.coil-kt:coil-compose-base:2.6.0 -> io.coil-kt:coil-base:2.6.0 -> androidx.appcompat:appcompat-resources:1.6.1 -> androidx.vectordrawable:vectordrawable-animated:1.1.0 -> androidx.interpolator:interpolator:1.0.0
+2026-06-09T08:12:06.1620005Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material3:material3-android:1.2.1 -> androidx.lifecycle:lifecycle-runtime:2.8.0
+2026-06-09T08:12:06.1621613Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material3:material3-android:1.2.1 -> androidx.lifecycle:lifecycle-runtime:2.8.0 -> androidx.lifecycle:lifecycle-runtime-android:2.8.0
+2026-06-09T08:12:06.1622585Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.savedstate:savedstate:1.2.1 -> androidx.arch.core:core-common:2.2.0
+2026-06-09T08:12:06.1623622Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material3:material3-android:1.2.1 -> androidx.lifecycle:lifecycle-runtime:2.8.0 -> androidx.lifecycle:lifecycle-runtime-android:2.8.0 -> androidx.arch.core:core-runtime:2.2.0
+2026-06-09T08:12:06.1624615Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.lifecycle:lifecycle-common:2.8.0
+2026-06-09T08:12:06.1625373Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.lifecycle:lifecycle-common:2.8.0 -> androidx.lifecycle:lifecycle-common-jvm:2.8.0
+2026-06-09T08:12:06.1626417Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.navigation:navigation-compose:2.5.1 -> androidx.lifecycle:lifecycle-common-java8:2.8.0
+2026-06-09T08:12:06.1627230Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0 -> androidx.work:work-runtime:2.9.0 -> androidx.lifecycle:lifecycle-livedata:2.8.0
+2026-06-09T08:12:06.1627982Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.fragment:fragment:1.5.1 -> androidx.lifecycle:lifecycle-livedata-core:2.8.0
+2026-06-09T08:12:06.1628574Z   :app:debugRuntimeClasspath -> androidx.lifecycle:lifecycle-runtime-ktx:2.8.0
+2026-06-09T08:12:06.1629133Z   :app:debugRuntimeClasspath -> androidx.lifecycle:lifecycle-runtime-ktx:2.8.0 -> androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.0
+2026-06-09T08:12:06.1629780Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.lifecycle:lifecycle-viewmodel:2.8.0
+2026-06-09T08:12:06.1630596Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.lifecycle:lifecycle-viewmodel:2.8.0 -> androidx.lifecycle:lifecycle-viewmodel-android:2.8.0
+2026-06-09T08:12:06.1631673Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.foundation:foundation-android:1.6.7 -> androidx.emoji2:emoji2:1.3.0 -> androidx.lifecycle:lifecycle-process:2.8.0 -> androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.0
+2026-06-09T08:12:06.1632674Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0 -> androidx.work:work-runtime:2.9.0 -> androidx.lifecycle:lifecycle-service:2.8.0
+2026-06-09T08:12:06.1633260Z   :app:debugRuntimeClasspath -> androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0
+2026-06-09T08:12:06.1633867Z   :app:debugRuntimeClasspath -> androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0 -> androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.0
+2026-06-09T08:12:06.1634698Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.compose.runtime:runtime:1.6.7
+2026-06-09T08:12:06.1635318Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.runtime:runtime-android:1.6.7
+2026-06-09T08:12:06.1635929Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.runtime:runtime-saveable:1.6.7
+2026-06-09T08:12:06.1636554Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.runtime:runtime-saveable-android:1.6.7
+2026-06-09T08:12:06.1637042Z   :app:debugRuntimeClasspath -> androidx.compose.ui:ui:1.6.7
+2026-06-09T08:12:06.1637480Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-android:1.6.7
+2026-06-09T08:12:06.1638114Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-android:1.6.7 -> androidx.autofill:autofill:1.0.0
+2026-06-09T08:12:06.1638749Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-geometry:1.6.7
+2026-06-09T08:12:06.1639319Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-geometry-android:1.6.7
+2026-06-09T08:12:06.1639893Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-util:1.6.7
+2026-06-09T08:12:06.1640542Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-util-android:1.6.7
+2026-06-09T08:12:06.1641016Z   :app:debugRuntimeClasspath -> androidx.compose.ui:ui-graphics:1.6.7
+2026-06-09T08:12:06.1641494Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-graphics-android:1.6.7
+2026-06-09T08:12:06.1642055Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-unit:1.6.7
+2026-06-09T08:12:06.1642715Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-unit-android:1.6.7
+2026-06-09T08:12:06.1643485Z   :app:debugRuntimeClasspath -> androidx.compose.ui:ui-test-manifest:1.6.7
+2026-06-09T08:12:06.1643885Z   :app:debugRuntimeClasspath -> androidx.compose.ui:ui-tooling-preview:1.6.7
+2026-06-09T08:12:06.1644395Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-tooling-preview-android:1.6.7
+2026-06-09T08:12:06.1644983Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-text:1.6.7
+2026-06-09T08:12:06.1645532Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-text-android:1.6.7
+2026-06-09T08:12:06.1646215Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.foundation:foundation-android:1.6.7 -> androidx.emoji2:emoji2:1.3.0
+2026-06-09T08:12:06.1647178Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.foundation:foundation-android:1.6.7 -> androidx.emoji2:emoji2:1.3.0 -> androidx.lifecycle:lifecycle-process:2.8.0
+2026-06-09T08:12:06.1648047Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0 -> androidx.work:work-runtime:2.9.0 -> androidx.startup:startup-runtime:1.1.1
+2026-06-09T08:12:06.1648752Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.activity:activity:1.9.0 -> androidx.tracing:tracing:1.0.0
+2026-06-09T08:12:06.1649630Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.hilt:hilt-navigation:1.2.0 -> androidx.navigation:navigation-runtime:2.5.1 -> androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0
+2026-06-09T08:12:06.1650578Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.0
+2026-06-09T08:12:06.1651066Z   :app:debugRuntimeClasspath -> androidx.core:core-ktx:1.13.1
+2026-06-09T08:12:06.1651612Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.savedstate:savedstate:1.2.1
+2026-06-09T08:12:06.1652311Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material3:material3-android:1.2.1 -> androidx.savedstate:savedstate-ktx:1.2.1
+2026-06-09T08:12:06.1653009Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-tooling-data:1.6.7
+2026-06-09T08:12:06.1653604Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-tooling-data-android:1.6.7
+2026-06-09T08:12:06.1654317Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.ui:ui-android:1.6.7 -> androidx.customview:customview-poolingcontainer:1.0.0
+2026-06-09T08:12:06.1655167Z   :app:debugRuntimeClasspath -> io.coil-kt:coil-compose:2.6.0 -> io.coil-kt:coil-compose-base:2.6.0 -> io.coil-kt:coil-base:2.6.0 -> androidx.profileinstaller:profileinstaller:1.3.1
+2026-06-09T08:12:06.1655899Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.foundation:foundation:1.6.7
+2026-06-09T08:12:06.1656591Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.foundation:foundation-android:1.6.7
+2026-06-09T08:12:06.1657245Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.animation:animation:1.6.7
+2026-06-09T08:12:06.1657847Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.animation:animation-android:1.6.7
+2026-06-09T08:12:06.1658464Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.animation:animation-core:1.6.7
+2026-06-09T08:12:06.1659084Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.animation:animation-core-android:1.6.7
+2026-06-09T08:12:06.1659713Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.foundation:foundation-layout:1.6.7
+2026-06-09T08:12:06.1660543Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.foundation:foundation-layout-android:1.6.7
+2026-06-09T08:12:06.1661348Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0 -> androidx.work:work-runtime:2.9.0 -> androidx.core:core:1.13.1 -> androidx.versionedparcelable:versionedparcelable:1.1.1
+2026-06-09T08:12:06.1662100Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material:material:1.6.7
+2026-06-09T08:12:06.1662690Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material:material-android:1.6.7
+2026-06-09T08:12:06.1663308Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material:material-icons-core:1.6.7
+2026-06-09T08:12:06.1663943Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material:material-icons-core-android:1.6.7
+2026-06-09T08:12:06.1664583Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material:material-ripple:1.6.7
+2026-06-09T08:12:06.1665205Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material:material-ripple-android:1.6.7
+2026-06-09T08:12:06.1665710Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00
+2026-06-09T08:12:06.1666096Z   :app:debugRuntimeClasspath -> androidx.compose.material3:material3:1.2.1
+2026-06-09T08:12:06.1666603Z   :app:debugRuntimeClasspath -> androidx.compose:compose-bom:2024.05.00 -> androidx.compose.material3:material3-android:1.2.1
+2026-06-09T08:12:06.1667172Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.fragment:fragment:1.5.1
+2026-06-09T08:12:06.1667772Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.fragment:fragment:1.5.1 -> androidx.loader:loader:1.0.0
+2026-06-09T08:12:06.1668565Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.fragment:fragment:1.5.1 -> androidx.viewpager:viewpager:1.0.0
+2026-06-09T08:12:06.1669362Z   :app:debugRuntimeClasspath -> com.google.dagger:hilt-android:2.51.1 -> androidx.fragment:fragment:1.5.1 -> androidx.viewpager:viewpager:1.0.0 -> androidx.customview:customview:1.0.0
+2026-06-09T08:12:06.1670009Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0
+2026-06-09T08:12:06.1670585Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.hilt:hilt-navigation:1.2.0
+2026-06-09T08:12:06.1671475Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.hilt:hilt-navigation:1.2.0 -> androidx.navigation:navigation-runtime:2.5.1
+2026-06-09T08:12:06.1672561Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.hilt:hilt-navigation:1.2.0 -> androidx.navigation:navigation-runtime:2.5.1 -> androidx.navigation:navigation-common:2.5.1
+2026-06-09T08:12:06.1673529Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.navigation:navigation-compose:2.5.1
+2026-06-09T08:12:06.1674379Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.navigation:navigation-compose:2.5.1 -> androidx.navigation:navigation-runtime-ktx:2.5.1
+2026-06-09T08:12:06.1675584Z   :app:debugRuntimeClasspath -> androidx.hilt:hilt-navigation-compose:1.2.0 -> androidx.navigation:navigation-compose:2.5.1 -> androidx.navigation:navigation-runtime-ktx:2.5.1 -> androidx.navigation:navigation-common-ktx:2.5.1
+2026-06-09T08:12:06.1676467Z   :app:debugRuntimeClasspath -> androidx.room:room-runtime:2.6.1
+2026-06-09T08:12:06.1677052Z   :app:debugRuntimeClasspath -> androidx.room:room-runtime:2.6.1 -> androidx.room:room-common:2.6.1
+2026-06-09T08:12:06.1677696Z   :app:debugRuntimeClasspath -> androidx.room:room-ktx:2.6.1
+2026-06-09T08:12:06.1678293Z   :app:debugRuntimeClasspath -> androidx.room:room-runtime:2.6.1 -> androidx.sqlite:sqlite:2.4.0
+2026-06-09T08:12:06.1679376Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0 -> androidx.work:work-runtime:2.9.0 -> androidx.sqlite:sqlite-framework:2.4.0
+2026-06-09T08:12:06.1680199Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0
+2026-06-09T08:12:06.1681222Z   :app:debugRuntimeClasspath -> androidx.work:work-runtime-ktx:2.9.0 -> androidx.work:work-runtime:2.9.0
+2026-06-09T08:12:06.1682272Z   :app:debugRuntimeClasspath -> io.coil-kt:coil-compose:2.6.0 -> io.coil-kt:coil-compose-base:2.6.0 -> io.coil-kt:coil-base:2.6.0 -> androidx.appcompat:appcompat-resources:1.6.1
+2026-06-09T08:12:06.1683702Z   :app:debugRuntimeClasspath -> io.coil-kt:coil-compose:2.6.0 -> io.coil-kt:coil-compose-base:2.6.0 -> io.coil-kt:coil-base:2.6.0 -> androidx.appcompat:appcompat-resources:1.6.1 -> androidx.vectordrawable:vectordrawable:1.1.0
+2026-06-09T08:12:06.1685575Z   :app:debugRuntimeClasspath -> io.coil-kt:coil-compose:2.6.0 -> io.coil-kt:coil-compose-base:2.6.0 -> io.coil-kt:coil-base:2.6.0 -> androidx.appcompat:appcompat-resources:1.6.1 -> androidx.vectordrawable:vectordrawable-animated:1.1.0
+2026-06-09T08:12:06.1686590Z   :app:debugRuntimeClasspath -> io.coil-kt:coil-compose:2.6.0 -> io.coil-kt:coil-compose-base:2.6.0 -> io.coil-kt:coil-base:2.6.0 -> androidx.exifinterface:exifinterface:1.3.7
+2026-06-09T08:12:06.1687192Z   :app:debugRuntimeClasspath -> androidx.core:core-splashscreen:1.0.1
+2026-06-09T08:12:06.1687405Z 
+2026-06-09T08:12:06.1687474Z * Try:
+2026-06-09T08:12:06.1687675Z > Run with --stacktrace option to get the stack trace.
+2026-06-09T08:12:06.1687974Z > Run with --info or --debug option to get more log output.
+2026-06-09T08:12:06.1688241Z > Run with --scan to get full insights.
+2026-06-09T08:12:06.1688498Z > Get more help at https://help.gradle.org.
+2026-06-09T08:12:06.1688660Z 
+2026-06-09T08:12:06.1688731Z BUILD FAILED in 58s
+2026-06-09T08:12:06.6295772Z ##[error]Process completed with exit code 1.
